@@ -11,7 +11,7 @@ pdflatex seminararbeit.tex
 @REM clean up auxilary files
 latexmk -c
 @REM remove files not removed by latexmk -c
-rm *.bbl
+del *.bbl
 
 @REM copy result to result directory
 if not exist ..\result mkdir ..\result
